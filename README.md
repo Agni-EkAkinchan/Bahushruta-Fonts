@@ -1,4 +1,4 @@
-This is an attempt to create fonts for Indian languages. Starting with Bahushruta Devanagari.
+This is an attempt to create 'bahushruta' fonts for Indian languages. Starting with Bahushruta Devanagari.
 This first upload - more of a POC. Includes below languages.
 Odia
 Kannada
