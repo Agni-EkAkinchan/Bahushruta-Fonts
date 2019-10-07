@@ -20,4 +20,6 @@ I am a non programmer and mostly software illiterate.
 
 below are some immediate problems that I am trying to find solution for.
 
-1) Need to create independent files for each language which can fallback on each other. (so that user can exclude all scripts he/she can read). It is not happening right now (despite mentioning same family for them) so this one file with multiple languages is temporary workaround.
+1) How to use these fonts as webfonts so that I can create a demo page showcasing them?
+
+2) Need to create independent files for each language which can fallback on each other. (so that user can exclude all scripts he/she can read). It is not happening right now (despite mentioning same family for them) so this one file with multiple languages is temporary workaround.
