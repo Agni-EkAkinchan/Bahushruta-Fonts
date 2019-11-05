@@ -12,8 +12,7 @@ Note that current output is NOT expected to be nearly problem free / very reliab
 
 - हृस्व इ matra (i matra) is shown on right (instead of left) for Odia, Kannada, Telugu, Malayalam.
 - e and/or ai matra alignment has problems in many scripts.
-- ref (r-kar) display in some contexts has problems, specially for Odia, Kannada, Telugu.
-- Malayalam - both r (r and rr) mapped to r to reduce ref problems, pronunciation mapping may be incorrect for some. chillu letters behaviour is not understood and will show up as stand alone.
+- Malayalam - both r (r and rr) mapped to r, pronunciation mapping may be incorrect for some. chillu letters behaviour is not understood and will show up as stand alone.
 
 -----------------------------------------------
 
@@ -27,3 +26,5 @@ below are some immediate problems that I am trying to find solution for.
 ----------------------------------------------------
 to use,
 download and install ttf file, in chrome->setting->appearance->customise fonts-> choose bahushruta devanagari for standard and sans serif
+
+if updating, close all instances of browser before installing newer file. (if not done, new file wont show effect till computer is restarted)
