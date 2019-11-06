@@ -1,5 +1,7 @@
-This is an attempt to create 'bahushruta' fonts for Indian languages. Starting with Bahushruta Devanagari.
-This first upload - more of a POC. Includes below scripts.
+This is an attempt to create 'bahushruta' fonts for Indian languages.
+Bahushruta Devanagari.
+As I started, wasnt sure if more than a POC like output was possible, but this is fairly workable Fonts now.
+Includes below scripts so far.
 Odia
 Kannada
 Gujarati
@@ -8,13 +10,14 @@ Telugu
 Bengali
 Malayalam
 
-Note that current output is NOT expected to be nearly problem free / very reliable. Some known issues are listed below and there will be more.
-
-- हृस्व इ matra (i matra) is shown on right (instead of left) for Odia, Kannada, Telugu, Malayalam.
-- e and/or ai matra alignment has problems in many scripts.
-- Malayalam - both r (r and rr) mapped to r, pronunciation mapping may be incorrect for some. chillu letters behaviour is not understood and will show up as stand alone.
+Note that current output is NOT expected to be nearly problem free but for most part, apart from some still remaining matra alignment issues. it is expected to give reasonable output. (Malayalam may need more feedback and may have some mis-mappings as of now.)
 
 -----------------------------------------------
+Bahushruta Kannada
+covers Devanagari, Telugu, Gujarati.
+I think it is mostly problem free for these three scripts.
+
+------------------------------
 
 I am a non programmer and mostly software illiterate.
 
