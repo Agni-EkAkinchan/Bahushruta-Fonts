@@ -1,11 +1,12 @@
 This is an attempt to create 'bahushruta' fonts for Indian languages.
-Bahushruta Devanagari.
-As I started, wasnt sure if more than a POC like output was possible, but this is fairly workable Fonts now.
-Includes below scripts so far.
+As I started, wasnt sure if more than a POC like output was possible, but this is fairly usable now.
+
+Bahushruta Devanagari includes below scripts so far.
 Odia
 Kannada
 Gujarati
 Gurumukhi
+Tamil
 Telugu
 Bengali
 Malayalam
@@ -28,6 +29,6 @@ below are some immediate problems that I am trying to find solution for.
 2) Need to create independent files for each language which can fallback on each other. (so that user can exclude all scripts he/she can read). It is not happening right now (despite mentioning same family for them) so this one file with multiple languages is temporary workaround.
 ----------------------------------------------------
 to use,
-download and install ttf file, in chrome->setting->appearance->customise fonts-> choose bahushruta devanagari for standard and sans serif
+go to page of lipi of your choice, download (right click, save link as) and install ttf file, in chrome->setting->appearance->customise fonts-> choose bahushruta devanagari for standard and sans serif
 
-if updating, close all instances of browser before installing newer file. (if not done, new file wont show effect till computer is restarted)
+If updating, close all instances of browser before installing newer file. (if not done, new file wont show effect till computer is restarted)
