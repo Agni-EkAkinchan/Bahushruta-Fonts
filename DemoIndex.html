@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<style>
+@font-face {
+    font-family: "Bahushruta Devanagari";
+    src: url("file:///F:/BahushrutaDemo/Bahushruta-Devanagari.ttf");
+}
+</style>
+<body style= "font-family: 'Bahushruta Devanagari';">
+
+<h3>
+A demonstration of Bahushruta Devanagari</h3>
+Text in Indian language:<br />
+<textarea rows="4" cols="100" id="myTextarea">
+জয় শ্রী রাম</textarea>
+
+<br />
+
+<button onclick="myFunction()" type="button">See text in Devanagari</button>
+
+<div id="demo" style= "font-family: 'Bahushruta Devanagari';">
+</div>
+<script>
+function myFunction() {
+  var x = document.getElementById("myTextarea").value;
+  document.getElementById("demo").innerHTML = x;
+}
+</script>
+
+</body>
+</html></div>
