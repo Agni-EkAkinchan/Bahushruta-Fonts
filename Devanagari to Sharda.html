@@ -1,0 +1,42 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<body style= "font-family: 'Noto Sans Sharada';">
+
+<h3>Ttransliteration of Devanagari to Sharda</h3>
+Text in Devanagari:<br />
+<textarea rows="4" cols="100" id="myTextarea">जय श्री राम</textarea>
+<br />
+<button onclick="myFunction()" type="button">See text in Sharda</button>
+<div id="demo" style= "font-family: 'Noto Sans Sharada';">
+</div>
+<script>
+DEVA = ['\u0901', '\u0902', '\u0903', '\u0905', '\u0906', '\u0907', '\u0908', '\u0909', '\u090a', '\u090b', '\u0960', '\u090c', '\u0961', '\u090f', '\u0910', '\u0913', '\u0914', '\u0915', '\u0916', '\u0917', '\u0918', '\u0919', '\u091a', '\u091b', '\u091c', '\u091d', '\u091e', '\u091f', '\u0920', '\u0921', '\u0922', '\u0923', '\u0924', '\u0925', '\u0926', '\u0927', '\u0928', '\u092a', '\u092b', '\u092c', '\u092d', '\u092e', '\u092f', '\u0930', '\u0932', '\u0933', '\u0935', '\u0936', '\u0937', '\u0938', '\u0939', '\u093e', '\u093f', '\u0940', '\u0941', '\u0942', '\u0943', '\u0944', '\u0962', '\u0963', '\u0947', '\u0948', '\u094b', '\u094c', '\u094d', '\u0950', '\u093c', '\u0966', '\u0967', '\u0968', '\u0969', '\u096a', '\u096b', '\u096c', '\u096d', '\u096e', '\u096f'];
+SHARDA = ['𑆀', '𑆁', '𑆂', '𑆃', '𑆄', '𑆅', '𑆆', '𑆇', '𑆈', '𑆉', '𑆊', '𑆋', '𑆌', '𑆍', '𑆎', '𑆏', '𑆐', '𑆑', '𑆒', '𑆓', '𑆔', '𑆕', '𑆖', '𑆗', '𑆘', '𑆙', '𑆚', '𑆛', '𑆜', '𑆝', '𑆞', '𑆟', '𑆠', '𑆡', '𑆢', '𑆣', '𑆤', '𑆥', '𑆦', '𑆧', '𑆨', '𑆩', '𑆪', '𑆫', '𑆬', '𑆭', '𑆮', '𑆯', '𑆰', '𑆱', '𑆲', '𑆳', '𑆴', '𑆵', '𑆶', '𑆷', '𑆸', '𑆹', '𑆺', '𑆻', '𑆼', '𑆽', '𑆾', '𑆿', '𑇀', '𑇄', '𑇊', '𑇐', '𑇑', '𑇒', '𑇓', '𑇔', '𑇕', '𑇖', '𑇗', '𑇘', '𑇙'];
+var shardaArray;
+function devaShardamap(y) {
+  var devaChar;
+  var i;
+  var sA = [];
+  for (i = 0; i < y.length; i++) {
+    devaChar = y[i];
+    var devaI = DEVA.indexOf(devaChar);
+    switch(devaI) {
+      case -1:
+        sA += devaChar;
+        break;
+      default:
+        sA += SHARDA[devaI];
+    }
+  }
+  return sA;
+}
+function myFunction() {
+  var x = document.getElementById("myTextarea").value;
+  var y = x.split("");
+  var shardaTxt = devaShardamap(y);
+  document.getElementById("demo").innerHTML = shardaTxt;
+}
+</script>
+</body>
+</html></div>
