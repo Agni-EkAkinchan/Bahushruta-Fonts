@@ -1,12 +1,9 @@
 <!DOCTYPE HTML>
 <html>
-<head>
-<body style= "font-family: 'Noto Sans Sharada';">
-
-<h3>Ttransliteration of Devanagari to Sharda</h3>
-Text in Devanagari:<br />
-<textarea rows="4" cols="100" id="myTextarea">जय श्री राम</textarea>
-<br />
+<body style= "font-family: 'Noto Sans Sharada'; white-space: pre-wrap;">
+<h2>Ttransliteration of Devanagari to Sharda</h2>
+Text in Devanagari:
+<textarea rows="10" cols="150" id="myTextarea">जय श्री राम</textarea>
 <button onclick="myFunction()" type="button">See text in Sharda</button>
 <div id="demo" style= "font-family: 'Noto Sans Sharada';">
 </div>
@@ -16,24 +13,30 @@ SHARDA = ['𑆀', '𑆁', '𑆂', '𑆃', '𑆄', '𑆅', '𑆆', '𑆇', '𑆈'
 var shardaArray;
 function devaShardamap(y) {
   var devaChar;
+  var devaLine;
   var i;
-  var sA = [];
+  var j;
+  var sT = [];
   for (i = 0; i < y.length; i++) {
-    devaChar = y[i];
-    var devaI = DEVA.indexOf(devaChar);
-    switch(devaI) {
-      case -1:
-        sA += devaChar;
-        break;
-      default:
-        sA += SHARDA[devaI];
+    devaLine = y[i];
+    for (j = 0; j < devaLine.length; j++) {
+      devaChar = devaLine[j];
+      var devaI = DEVA.indexOf(devaChar);
+      switch(devaI) {
+        case -1:
+          sT += devaChar;
+          break;
+        default:
+          sT += SHARDA[devaI];
+      }
     }
+    sT += ('</br>')
   }
-  return sA;
+  return sT;
 }
 function myFunction() {
   var x = document.getElementById("myTextarea").value;
-  var y = x.split("");
+  var y = x.split("\n");
   var shardaTxt = devaShardamap(y);
   document.getElementById("demo").innerHTML = shardaTxt;
 }
