@@ -1,4 +1,4 @@
-This is an attempt to create 'bahushruta' fonts for Indian languages.
+This is an attempt to create fonts that transliterates Indic lipis to indic lipi of choice. I have named them Bahushruta.
 As I started, wasnt sure if more than a POC like output was possible, but this is fairly usable now.
 
 Bahushruta Devanagari includes below scripts so far.
@@ -10,13 +10,18 @@ Tamil
 Telugu
 Bengali
 Malayalam
+Sinhali
 
 Note that current output is NOT expected to be nearly problem free but for most part, apart from some still remaining matra alignment issues. it is expected to give reasonable output. (Malayalam may need more feedback and may have some mis-mappings as of now.)
 
 -----------------------------------------------
 Bahushruta Kannada
-covers Devanagari, Telugu, Gujarati.
+Covers Devanagari, Telugu, Gujarati.
 I think it is mostly problem free for these three scripts.
+
+-------------------------------------------------
+Bahushruta Odia
+Covers Bengali, Devanagari.
 
 ----------------------------------------------------
 to use,
